@@ -1,5 +1,5 @@
 
-public class dequeue {
+public class deque {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
