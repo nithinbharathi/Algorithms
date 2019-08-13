@@ -44,7 +44,7 @@ class Manacher{
               center = i;
             }
           }
-          System.out.println(str.substring((center-1-max_length)/2,max_length));
+          System.out.println(str.substring((center-1-max_length+1)/2,(center+max_length-1)/2));
   }
 	    
 }
