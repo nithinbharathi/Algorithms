@@ -1,4 +1,6 @@
- Scanner input = new Scanner(System.in);
+Class BipartiteGraph{ 
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
 	        int v = input.nextInt();
 	        int e = input.nextInt();
 	        int graph[][] = new int[2001][2001];
