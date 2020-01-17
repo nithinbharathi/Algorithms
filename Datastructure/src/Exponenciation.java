@@ -15,14 +15,14 @@ class Exponenciation
 		System.out.println(res1);
 		System.out.println(res2);
 	}
-	public static int iter_exp(int n,int p){    //Time Complexity O(N), Space Complexity = O(1)
+	public static int iter_exp(int n,int p){    //Time Complexity O(P), Space Complexity = O(1)
 	    int res =1;
 	    for(int i=0;i<p;i++){
 	        res*=n;
 	    }
 	    return res;
 	}
-	public static int rec_exp(int n,int p){     //Time complexity (N), Space Complexity = O(p)
+	public static int rec_exp(int n,int p){     //Time complexity (P), Space Complexity = O(P)
 	    if(p == 0)return 1;
 	    return n*rec_exp(n,p-1);
 	}
