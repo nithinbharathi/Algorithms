@@ -10,9 +10,9 @@ class FermatnCr
 		Scanner input = new Scanner(System.in);
 		int a = input.nextInt();
 		int m = input.nextInt();
-		calculate_nCr(a,m);
+		calculate_ModularInverse(a,m);
 	}
-	public static void calculate_nCr(int a,int m){
+	public static void calculate_ModularInverse(int a,int m){
 	    if(gcd(a,m) != 1){
 	        System.out.println("Inverse of "+a+" "+"Does Not Exist");
 	    }else{
