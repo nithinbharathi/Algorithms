@@ -30,7 +30,7 @@ class ShuntingYard
 	            if(!stack.isEmpty() && precedence(s.charAt(i))>precedence(stack.peek())){
 	                stack.push(s.charAt(i));
 	            }else{
-	                while(!stack.isEmpty() && precedence(s.charAt(i))<precedence(stack.peek())){
+	                while(!stack.isEmpty() && precedence(s.charAt(i))<=precedence(stack.peek())){
 	                    res+=stack.pop();
 	                }
 	                stack.push(s.charAt(i));
